@@ -2,12 +2,18 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Debak hub", "Synapse")
 local Tab = Window:NewTab("Grow a garden")
 local Section = Tab:NewSection("Gag scripts")
-Section:NewButton("No lag hub(keyless)", "ButtonInfo", function()
-    print("Clicked")
-end)loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/Loader/LoaderV1.lua"))() 
-Section:NewButton("Speed hub x(keyless)", "ButtonInfo", function()
-    print("Clicked")
-end)loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-Section:NewButton("Skillix/skilly Hub(has key)", "ButtonInfo", function()
-    print("Clicked")
-end)loadstring(game:HttpGet('https://raw.githubusercontent.com/skxller1/LoaderV/refs/he
+
+Section:NewButton("No lag hub (keyless)", "Loads No Lag Hub", function()
+    print("Loading No Lag Hub...")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/Loader/LoaderV1.lua"))()
+end)
+
+Section:NewButton("Speed hub X (keyless)", "Loads Speed Hub X", function()
+    print("Loading Speed Hub X...")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
+Section:NewButton("Skillix/Skilly Hub (has key)", "Loads Skillix Hub (requires key)", function()
+    print("Loading Skillix Hub...")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/skxller1/LoaderV/refs/heads/main/mainload"))()
+end)
